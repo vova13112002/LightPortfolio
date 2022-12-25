@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Cardo', serif;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  // overflow-y: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+

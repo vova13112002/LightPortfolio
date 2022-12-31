@@ -18,7 +18,7 @@
 //   }
 // }
 
-//JS скрол не працює(хз)
+//JS scroll
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -34,6 +34,15 @@ for (let anchor of anchors) {
 
   })
 }
+
+//burger
+const burger = document?.querySelector('[data-burger]');
+const nav = document?.querySelector('[data-nav]');
+
+burger?.addEventListener('click', () => {
+  burger?.classList.toggle('burger--active');
+  nav?.classList.toggle('nav--visible');
+});
 
 // document.querySelectorAll('a[href*="#"]').forEach(link => {
 //   link.addEventListener('click', function (e) {
